@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias/TransferTalks</title>
+    <link rel="icon" href="logo-sem-fundo.png" type="image/png">
+    <style>
+       .noticias {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        
+.home {
+    left: 500px;
+}
+
+/* Barra de navegação (nav) */
+/* Barra de navegação (nav) */
+nav.aqui {
+    margin-top: -20px;
+    position: relative; /* Adicione esta linha para definir a posição */
+    top: -12px; /* Use o top para ajustar a posição vertical */
+}
+
+
+
+nav.aqui ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Adicione esta linha para usar flexbox */
+    justify-content: center;
+}
+
+nav.aqui ul li {
+    margin: 0 15px;
+    display: inline;
+}
+
+nav.aqui ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+    position: relative;
+}
+
+nav.aqui ul li a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-in-out;
+}
+
+nav.aqui ul li a:hover:before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+/* ... (seu código anterior) ... */
+
+.nav-item {
+    display: inline-block;
+}
+
+.nav-item a {
+    text-decoration: none; /* Adicione esta linha */
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.nav-item a:hover {
+    background-color: #555;
+}
+
+.nav-item a.nav-link {
+    text-decoration: none;
+    color: #fff; /* Adicionado para definir a cor do texto como branco */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Cabeçalho (header) */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 0px; /* Altere o valor conforme necessário */
+    text-decoration: none;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    text-align: center;
+}
+
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    max-width: 45px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo-container a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+}
+
+
+.logo-container span {
+    margin-left: 5px;
+    left: -500px;
+}
+        .noticia {
+    max-width: 80%; /* Alterada a largura máxima para 80% */
+    width: 600px; /* Largura máxima para garantir legibilidade */
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+
+.noticia img {
+    max-width: 100%;
+    height: auto; /* Manter a proporção da imagem */
+    border-radius: 8px;
+}
+
+
+        .noticia h2 {
+            margin: 10px 0;
+        }
+
+        .noticia p {
+            color: #555;
+            margin: 0;
+        }
+
+        footer {
+    background-color: #444;
+    color: #fff;
+    padding: 2px; /* Reduzido para 2px */
+    max-width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+}
+footer h5 {
+    font-size: 20px; /* Reduzindo o tamanho da fonte */
+    margin: 0; /* Removendo margens para diminuir o espaço vertical */
+    padding: 0; /* Removendo padding para diminuir o espaço vertical */
+}
+
+
+
+    </style>
+</head>
+
+<body style="padding-top: 70px;">
+    <header>
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="logo-sem-fundo.png" alt="Logo do Blog">
+                <span>TransferTalks</span>
+            </a>
+        </div>
+        <nav class="aqui">
+            <div class="nav-item"><a class="nav-link home" href="index.html">Home</a></div>
+            <div class="nav-item"><a class="nav-link noticias" href="noticias.html">Notícias</a></div>
+            <div class="nav-item"><a class="nav-link sobre" href="quem-sou.html">Sobre Mim</a></div>
+        </nav>
+        
+        
+        
+        
+        
+    </header>
+
+    <div class="noticias">
+        <div class="noticia">
+            <a href="noticia-01.html">
+            <img src="aspas.jpg" alt="Notícia 1">
+            
+            <h2>Motivos e Desfecho da Saída de aspas da LOUD</h2>
+            <p>Tentativa de Renovação pela Organização, mas a Decisão do Astro de VALORANT já Estava Tomada</p>
+        </a>
+        </div>
+        <div class="noticia">
+            <a href="noticia-02.html">
+            <img src="yay.jpg" alt="Notícia 2">
+            <h2>Yay para Team Liquid!? Novos Rumores Agitam o Mundo dos eSports!</h2>
+            <p>O Leader norte-americano LeaderGrev traz informações sobre possíveis mudanças no cenário competitivo de Valorant. Entenda os detalhes e as expectativas em torno dessa potencial transferência.</p>
+       </a>
+        </div>
+        <div class="noticia">
+            <a href="noticia-03.html">
+            <img src="demon1.jpg" alt="Notícia 3">
+            <h2>Max "Demon1" Mazanov: Da Ascensão Meteórica ao Dilema Contratual</h2>
+            <p>A Trajetória do Pro Player que Conquistou o CHAMPIONS e Enfrenta Desafios Contratuais</p>
+        </a>
+        </div>
+    </div>
+
+    <footer>
+        <a href="https://twitter.com/TransferTalksof" style="color: #f0f0f0;"><h5>@TransferTalks</h5></a>
+     </footer>
+</body>
+
+</html>

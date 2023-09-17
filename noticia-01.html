@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TransferTalks</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo-sem-fundo.png" type="image/png">
+
+<style>
+ 
+ .home {
+    left: 500px;
+}
+
+/* Barra de navegação (nav) */
+/* Barra de navegação (nav) */
+nav.aqui {
+    margin-top: -20px;
+    position: relative; /* Adicione esta linha para definir a posição */
+    top: -12px; /* Use o top para ajustar a posição vertical */
+}
+
+
+
+nav.aqui ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Adicione esta linha para usar flexbox */
+    justify-content: center;
+}
+
+nav.aqui ul li {
+    margin: 0 15px;
+    display: inline;
+}
+
+nav.aqui ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+    position: relative;
+}
+
+nav.aqui ul li a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-in-out;
+}
+
+nav.aqui ul li a:hover:before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+/* ... (seu código anterior) ... */
+
+.nav-item {
+    display: inline-block;
+}
+
+.nav-item a {
+    text-decoration: none; /* Adicione esta linha */
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.nav-item a:hover {
+    background-color: #555;
+}
+
+.nav-item a.nav-link {
+    text-decoration: none;
+    color: #fff; /* Adicionado para definir a cor do texto como branco */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Cabeçalho (header) */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 2px; /* Altere o valor conforme necessário */
+    text-decoration: none;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    text-align: center;
+}
+
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    max-width: 45px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo-container a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+}
+
+
+.logo-container span {
+    margin-left: 5px;
+    left: -500px;
+}
+        .noticia {
+    max-width: 80%; /* Alterada a largura máxima para 80% */
+    width: 600px; /* Largura máxima para garantir legibilidade */
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.blog-post {
+    max-width: 800px;
+    margin: 85px auto 50px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.blog-post img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+footer {
+    background-color: #444;
+    color: #fff;
+    padding: 5px;
+    max-width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h5 {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 1.4em;
+    line-height: 1.6;
+    color: #333;
+}
+
+h1, h3 {
+    color: #333;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-top: 10px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+.highlight {
+    color: #FF5733; /* ou qualquer outra cor que preferir */
+    font-weight: bold; /* ou qualquer outra formatação que preferir */
+}
+
+
+blockquote {
+    font-style: italic;
+    border-left: 4px solid #333;
+    margin: 1em 0;
+    padding: 0 1em;
+    color: #555;
+}
+
+blockquote p {
+    margin: 0;
+}
+
+.centered {
+    text-align: center;
+}
+
+#scrollToTop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+#scrollToTop:hover {
+    background-color: #555;
+}
+
+</style>
+</head>
+
+<header>
+    <div class="logo-container">
+        <a href="index.html">
+            <img src="logo-sem-fundo.png" alt="Logo do Blog">
+            <span>TransferTalks</span>
+        </a>
+    </div>
+    <nav class="aqui">
+        <div class="nav-item"><a class="nav-link home" href="index.html">Home</a></div>
+        <div class="nav-item"><a class="nav-link noticias" href="noticias.html">Notícias</a></div>
+        <div class="nav-item"><a class="nav-link sobre" href="quem-sou.html">Sobre Mim</a></div>
+    </nav>
+    </header>
+    
+        <div class="blog-post">
+            <h1>Motivos e Desfecho da Saída de aspas da LOUD</h1>
+            <h3>Tentativa de Renovação pela Organização, mas a Decisão do Astro de VALORANT já Estava Tomada</h3>
+            <div class="centered">
+                <img src="aspas.jpg" alt="aspas campeão">
+            </div>
+            <p>O que a comunidade brasileira de VALORANT aguardava aconteceu na segunda-feira (11): <strong class="highlight">aspas anunciou sua saída da LOUD.</strong> Mas quais foram os motivos? Diante das incertezas públicas de ambos os lados, o site <strong class="highlight">The Enemy</strong> obteve respostas e informações exclusivas sobre o caso (confira abaixo).</p>
+            <p>Antes de tudo, é preciso contextualizar que <strong class="highlight">aspas</strong> já havia manifestado o desejo de deixar a LOUD após a conquista do VALORANT Champions 2022, da mesma forma que Sacy e pANcada fizeram. No entanto, ele foi persuadido a permanecer na organização em 2023. Inicialmente, ele havia se entusiasmado com o projeto apresentado pela equipe brasileira, mas com o tempo, a confiança se desgastou.</p>
+            <p>Inicialmente, <strong class="highlight">aspas</strong> ficou insatisfeito com a estrutura montada pela LOUD nos Estados Unidos para o VCT Americas 2023. Embora a organização tenha enfrentado alguns percalços no início, conseguiu resolvê-los entre o meio e o fim da temporada — porém, nesse ponto, a decisão já estava tomada. O pai do jogador, que gerencia sua carreira, chegou a ir ao país durante as finais da liga internacional para, além de desfrutar da viagem, também avaliar a situação pessoalmente.</p>
+            <p>Além disso, apesar de ter se tornado o único jogador a ser embaixador de uma marca no cenário das Américas de VALORANT devido à influência da LOUD, <strong class="highlight">aspas</strong> se decepcionou com promessas não cumpridas pela organização, o que aumentou ainda mais sua insatisfação.</p>
+            <p>Nessa linha de raciocínio, algumas pessoas próximas a <strong class="highlight">aspas</strong> defendiam que ele deveria aproveitar melhor o momento de sua carreira para obter um salário mais elevado do que o recebido na LOUD.</p>
+            <p>Em resumo, considerando todos esses fatores, <strong class="highlight">aspas</strong> chegou à conclusão durante a própria temporada de 2023 que deixaria a LOUD após o término do contrato. Apesar das informações vazadas por Slasher indicando um clima tenso entre <strong class="highlight">aspas</strong> e outros jogadores da equipe antes do VALORANT Champions 2023, esse aspecto não influenciou na decisão.</p>
+            <p>Vale ressaltar que, após ser eliminado e terminar no top-3 do mundial deste ano, <strong class="highlight">aspas</strong> afirmou em uma entrevista coletiva que não tinha a intenção de sair da LOUD. Contudo, naquele momento, o jogador já havia tomado a decisão de deixar a organização, mas não havia comunicado internamente.</p>
+            <p>Embora soubesse do desejo de <strong class="highlight">aspas</strong> de sair, a LOUD fez uma proposta de renovação e fez o máximo para mantê-lo por pelo menos mais uma temporada competitiva. No entanto, o jogador recusou e optou por comunicar a decisão de forma independente nas redes sociais — o que, inclusive, não havia sido acordado com a LOUD.</p>
+            <p>Quanto às propostas, <strong class="highlight">aspas</strong> já havia recebido algumas sondagens enquanto estava sob contrato com a LOUD. Ainda assim, ele deixou a organização brasileira sem ter acertado com nenhuma equipe e, como anunciou, pretende considerar todas as ofertas antes de decidir para qual organização irá.</p> <blockquote>
+                <p>Informação obtida através do site <strong>The Enemy</strong>.</p>
+            </blockquote>
+        </div>
+
+        <footer>
+            <h5>@TransferTalks</h5>
+        </footer>
+    
+        <button id="scrollToTop" title="Voltar ao Topo">Subir ao topo</button>
+    
+        <script src="script.js"></script>
+    </body>
+    
+    </html>

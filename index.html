@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home/TransferTalks</title>
+    <!-- Adicione o ícone da guia do navegador (se você já tiver um) aqui -->
+    <link rel="icon" href="logo-sem-fundo.png" type="image/png">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.home {
+    left: 500px;
+}
+
+/* Barra de navegação (nav) */
+/* Barra de navegação (nav) */
+nav.aqui {
+    margin-top: -20px;
+    position: relative; /* Adicione esta linha para definir a posição */
+    top: -12px; /* Use o top para ajustar a posição vertical */
+}
+
+
+
+nav.aqui ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Adicione esta linha para usar flexbox */
+    justify-content: center;
+}
+
+nav.aqui ul li {
+    margin: 0 15px;
+    display: inline;
+}
+
+nav.aqui ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+    position: relative;
+}
+
+nav.aqui ul li a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-in-out;
+}
+
+nav.aqui ul li a:hover:before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+/* ... (seu código anterior) ... */
+
+.nav-item {
+    display: inline-block;
+}
+
+.nav-item a {
+    text-decoration: none; /* Adicione esta linha */
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.nav-item a:hover {
+    background-color: #555;
+}
+
+.nav-item a.nav-link {
+    text-decoration: none;
+    color: #fff; /* Adicionado para definir a cor do texto como branco */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Cabeçalho (header) */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    text-decoration: none;
+
+    align-items: center; /* Centralize verticalmente */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    text-align: center;
+}
+
+.logo-container img {
+    max-width: 45px;
+    height: auto;
+    margin-right: 10px;
+    
+}
+
+.logo-container a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    left: -500px;
+}
+
+.logo-container span {
+    margin-left: 5px;
+    left: -500px;
+}
+
+
+/* Apresentação (presentation) */
+.presentation {
+    max-width: 800px;
+    margin: 100px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.presentation h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.presentation p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Rodapé (footer) */
+footer {
+    background-color: #444;
+    color: #fff;
+    padding: 5px;
+    max-width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h5 {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Botão "Voltar ao Topo" */
+#scrollToTop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#scrollToTop:hover {
+    background-color: #0056b3;
+}
+
+.page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.presentation img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #444;
+    color: #fff;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    margin-top: auto; /* Mantém o rodapé no final da página */
+}
+
+.ultimas {
+    position: relative;
+    top: -60px; /* Adicione um valor maior se necessário */
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    background-color: #1b7c54;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.ultimas:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="logo-sem-fundo.png" alt="Logo do Blog">
+                <span>TransferTalks</span>
+            </a>
+        </div>
+        <nav class="aqui">
+            <div class="nav-item"><a class="nav-link home" href="index.html">Home</a></div>
+            <div class="nav-item"><a class="nav-link noticias" href="noticias.html">Notícias</a></div>
+            <div class="nav-item"><a class="nav-link sobre" href="quem-sou.html">Sobre Mim</a></div>
+        </nav>
+        
+        
+        
+        
+        
+    </header>
+
+    <div class="blog-post">
+        <div class="presentation">
+            <h1>Bem-vindo ao TransferTalks</h1>
+            <img src="logo.png" alt="">
+            <p>Explore o epicentro das últimas notícias, análises e informações sobre as janelas de transferências no Brasil. Estamos aqui para mantê-lo atualizado. Não perca nossas postagens! Nesta página, estarei pela primeira vez praticando o jornalismo. Sou novo na área e pretendo entrar na faculdade em breve! Então, se tiver algum erro em algo como: Notícias, site ou no blog, me avisem. Pois tenho que fazer tudo, desde procurar a notícia até programar o site! Espero que entendam e até mais :)</p>
+        </div>
+
+        <!-- Botão para redirecionar para "noticias.html" -->
+        <a href="noticias.html" class="ultimas" id="btnLeiaMais">Leia as nossas últimas postagens</a>
+    </div>
+
+    <footer>
+        <a href="https://twitter.com/TransferTalksof" style="color: #f0f0f0;"><h5>@TransferTalks</h5></a>
+     </footer>
+
+    <script>
+        // Adicionando um evento de clique ao botão
+        document.getElementById('btnLeiaMais').addEventListener('click', function() {
+            // Redirecionar para "noticias.html"
+            window.location.href = 'noticias.html';
+        });
+    </script>
+</body>
+</html>
